@@ -43,7 +43,7 @@ http://localhost:8000
 
 
 ### LIVE URL
-**GET** https://hng-stage-1-mauve.vercel.app/api/classify-number?number=11
+**GET** https://hng-stage-1-vlg5.vercel.app/api/classify-number?number=11
 
 ### Response Format (`200 OK`)
 ```json
@@ -56,7 +56,7 @@ http://localhost:8000
   "fun_fact": "11 is the number of pounds one gallon of pure maple syrup weighs." 
 }
 ``` 
-**GET** https://hng-stage-1-mauve.vercel.app/api/classify-number?number="70eye"
+**GET** https://hng-stage-1-vlg5.vercel.app/api/classify-number?number="70eye"
 
 ### Response Format (`400 Bad Request`)
 ```json
