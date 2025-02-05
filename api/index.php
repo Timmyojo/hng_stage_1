@@ -30,7 +30,7 @@ if ($uri === "/api/classify-number") {
 
     $pe = explode(".", $number);
 
-    if ($int_number <= 0 || count($pe) > 1) {
+    if ($int_number <= 0 || count($pe) > 1 || ctype_digit($number) === false) {
         http_response_code(400);
         echo json_encode([
             "number" => $number,
