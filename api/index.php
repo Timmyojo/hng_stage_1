@@ -28,7 +28,9 @@ if ($uri === "/api/classify-number") {
     $is_prime = false;
     $properties = [];
 
-    if ($int_number <= 0) {
+    $pe = explode(".", $number);
+
+    if ($int_number <= 0 || count($pe) > 1) {
         http_response_code(400);
         echo json_encode([
             "number" => $number,
